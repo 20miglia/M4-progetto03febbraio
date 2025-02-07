@@ -54,3 +54,70 @@ console.log(prova)
 
 /*Esercizio numero 4*/
 
+let cerca = (città) => {
+ if(città.startsWith("Los") || città.startsWith("New")) {
+    return città } 
+    else {
+        return false
+    }
+}
+
+/*Esercizio numero 5*/
+
+let sas = [5,10,20]
+
+let somma = (calcola) => {
+    let verifica = 0 
+    for (let i = 0; i < calcola.length; i++){
+        let vel = calcola[i]
+        verifica += vel
+    }
+    return verifica
+}
+
+let das = somma(sas)
+
+console.log(das)
+
+/*Esercizio numero 6*/
+
+let not = (tic) => {
+    if (tic.includes(1) || tic.includes(3)) {
+        return false
+    } else {
+        return true
+    }
+  }
+  
+  /*Esercizio numero 7*/
+
+  let vet = (gradi) => {
+    if (gradi<90) {
+        return "acuto"
+    }
+    else if(gradi>90 && gradi<180) {
+        return "ottuso"
+    }
+    else if (gradi === 90) {
+        return "retto"
+    }
+    else if (gradi === 180) {
+        return "piatto"
+    }
+   
+  }
+ 
+  /*Esercizio numero 8*/
+
+    let acronimo = (parola) => {
+    let processo = parola.split(" ")
+    let casuale = ""
+    for(let i=0; i < processo.length; i ++){
+        let pit = processo[i]
+        casuale += pit.charAt(0)
+    }
+    return casuale
+  }
+ 
+  
+  
